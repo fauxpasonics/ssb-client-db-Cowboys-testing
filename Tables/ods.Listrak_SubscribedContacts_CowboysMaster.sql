@@ -1,0 +1,33 @@
+CREATE TABLE [ods].[Listrak_SubscribedContacts_CowboysMaster]
+(
+[Email] [varchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Subscribe Date (UTC-05)] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Method] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo FirstName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo LastName] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo ZipCode] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo Phone] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo DOB] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CustomerInfo FavoritePlayer] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo DC ProShop Offers] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo DC Newsletter] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo DC Fan Playbook] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo DC Events & Ticket Offers] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo AT&T Stadium Events & Ticket Offers] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionInfo Ford Center Events & Ticket Offers] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Spent One Year] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Spent Two Year] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Spent Three Year] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Spent Total] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Gender] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Average Order Value] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Last Browsed Category] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FA Customer Metrics Last Browsed Subcategory] [varchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Unsubscribe Date (UTC-05)] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL__CreatedDate] [datetime] NULL CONSTRAINT [DF__Listrak_S__ETL____7DF98C1D] DEFAULT (getdate()),
+[FA Customer Metrics Spent One Yeara] [decimal] (18, 6) NULL,
+[FA Customer Metrics Spent Two Yeara] [decimal] (18, 6) NULL,
+[FA Customer Metrics Spent Three Yeara] [decimal] (18, 6) NULL,
+[FA Customer Metrics Spent Totala] [decimal] (18, 6) NULL
+)
+GO

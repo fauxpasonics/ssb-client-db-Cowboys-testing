@@ -1,0 +1,32 @@
+CREATE TABLE [ods].[Listrak_SubscribedContacts]
+(
+[ListID] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[EmailAddress] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscriptionState] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SubscribeDate] [datetime] NULL,
+[SubscribeMethod] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[UnsubscribeDate] [datetime] NULL,
+[UnsubscribeMethod] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FirstName] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LastName] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Gender] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Phone] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ZipCode] [nvarchar] (150) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ATTStadiumEventsAndTicketOffers] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[AverageOrderValue] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCEventsAndTicketOffers] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCFanPlaybook] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCNewsletter] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCProShopOffers] [nvarchar] (1000) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FavoritePlayer] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[FordCenterEventsAndTicketOffers] [nvarchar] (20) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MostBrowsedCategory] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[MostBrowsedSubcategory] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL__CreatedDate] [datetime] NULL,
+[ETL__UpdatedDate] [datetime] NULL,
+[SpentOneYear] [decimal] (18, 6) NULL,
+[SpentTwoYear] [decimal] (18, 6) NULL,
+[SpentThreeYear] [decimal] (18, 6) NULL,
+[SpentTotal] [decimal] (18, 6) NULL
+)
+GO

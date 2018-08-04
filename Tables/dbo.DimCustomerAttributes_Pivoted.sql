@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[DimCustomerAttributes_Pivoted]
+(
+[DimCustomerID] [int] NULL,
+[CowboysFitMemberStatus] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CowboysFitAgreementNum] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CowboysFitMembershipType] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CowboysFitPrimaryMember] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUContactMemberID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUMemberID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUMembershipType] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUMemberSince] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUContactJoinDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUContactExpirationDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUStore] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[DCUAutoPayParticipant] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CowboysClubMemberType] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StoreLocation] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[StoreID] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PresenceOfChildren] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[BusinessOwner] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HomeOwnerRenter] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SOHOIndicator] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonicxLifestageClusterCode] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[PersonicxLifestageGroupsCode] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HealthEnthusiastRank] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SportsEnthusiastRank] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[VisitType] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TourPerson] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TourDate] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[LeadSource] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[WeddingAnniversary] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Profession] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[NetWorth] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Race] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ConcertGoers] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[TravelSpend] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[HouseholdIncome] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ListName] [varchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+CREATE NONCLUSTERED INDEX [IDX_DimCustomerID_DimCustAttributes] ON [dbo].[DimCustomerAttributes_Pivoted] ([DimCustomerID])
+GO
